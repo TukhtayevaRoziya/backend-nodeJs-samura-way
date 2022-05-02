@@ -20,7 +20,9 @@ const server = http.createServer(function (request, response) {
       break;
 
     default:
-      response.write("404 not found. Pages: /students , /admin " + requestCount++);
+      response.write(
+        "404 not found. Pages: /students , /admin " + requestCount++
+      );
       response.end();
       break;
   }
